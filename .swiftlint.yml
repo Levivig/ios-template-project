@@ -1,0 +1,28 @@
+disabled_rules: # rule identifiers to exclude from running
+  - colon
+  - comma
+  - control_statement
+  - trailing_whitespace
+  - type_name
+opt_in_rules: # some rules are only opt-in
+  - empty_count
+  - force_unwrapping
+  - function_default_parameter_at_end
+  - prohibited_super_call
+  - redundant_nil_coalescing
+  - sorted_imports
+  - unneeded_parentheses_in_closure_argument
+  - yoda_condition
+  # Find all the available rules by running:
+  # swiftlint rules
+excluded: # paths to ignore during linting. Takes precedence over `included`.
+  - Carthage
+  - Pods
+  - rftTests
+
+force_cast: warning # implicitly
+line_length: 190
+reporter: "xcode"
+cyclomatic_complexity:
+  ignores_case_statements: true
+

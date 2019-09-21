@@ -6,8 +6,8 @@
 //  Copyright © 2019. levivig. All rights reserved.
 //
 
-import XCTest
 @testable import Template
+import XCTest
 
 class TemplateTests: XCTestCase {
 
