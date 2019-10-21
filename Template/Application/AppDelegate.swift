@@ -35,7 +35,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         initialController.setNavigationBarHidden(true, animated: false)
         initialController.setRootWireframe(wireframe, animated: true)
         
-        self.window = UIWindow(frame: UIScreen.main.bounds)
+        if self.window == nil {
+            self.window = UIWindow(frame: UIScreen.main.bounds)
+            if #available(iOS 13.0, *) {
+                self.window?.overrideUserInterfaceStyle = .light
+            }
+        }
         
         self.window?.rootViewController = initialController
         self.window?.makeKeyAndVisible()
