@@ -33,6 +33,7 @@
 		1B0BFB5B2336303F0054E28A /* TabbarInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0BFB552336303F0054E28A /* TabbarInteractor.swift */; };
 		1B0BFB61233632B10054E28A /* DataProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0BFB60233632B10054E28A /* DataProviderProtocol.swift */; };
 		1B0BFB63233632C60054E28A /* RestClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0BFB62233632C60054E28A /* RestClient.swift */; };
+		1BDD46A223AFFEAE0020AC54 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDD46A123AFFEAE0020AC54 /* Constants.swift */; };
 		6524D19B1008FBBBC75E37A9 /* Pods_TemplateTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20BC19AFC57ED15C2391D931 /* Pods_TemplateTests.framework */; };
 		CAE9C10E91D46750C2067A3E /* Pods_Template.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DFFF0229F7F56A4EB810EAF /* Pods_Template.framework */; };
 		FB1C3A0282E0DCDC2B968287 /* Pods_TemplateUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA1C71581E8FB7D1071CE22E /* Pods_TemplateUITests.framework */; };
@@ -88,6 +89,7 @@
 		1B0BFB552336303F0054E28A /* TabbarInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabbarInteractor.swift; sourceTree = "<group>"; };
 		1B0BFB60233632B10054E28A /* DataProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProviderProtocol.swift; sourceTree = "<group>"; };
 		1B0BFB62233632C60054E28A /* RestClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestClient.swift; sourceTree = "<group>"; };
+		1BDD46A123AFFEAE0020AC54 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		20BC19AFC57ED15C2391D931 /* Pods_TemplateTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TemplateTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		289B179FEFFC70B4A0A408EA /* Pods-TemplateUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TemplateUITests.release.xcconfig"; path = "Target Support Files/Pods-TemplateUITests/Pods-TemplateUITests.release.xcconfig"; sourceTree = "<group>"; };
 		4EF7DC8171F9897A5B5FA456 /* Pods-TemplateTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TemplateTests.release.xcconfig"; path = "Target Support Files/Pods-TemplateTests/Pods-TemplateTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -184,6 +186,7 @@
 			children = (
 				1B0BFB2E233629630054E28A /* Initializers */,
 				1B0BFAFB233628850054E28A /* AppDelegate.swift */,
+				1BDD46A123AFFEAE0020AC54 /* Constants.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -582,6 +585,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B0BFB572336303F0054E28A /* TabbarViewController.swift in Sources */,
+				1BDD46A223AFFEAE0020AC54 /* Constants.swift in Sources */,
 				1B0BFB3D23362A000054E28A /* FormatterInterface.swift in Sources */,
 				1B0BFAFC233628850054E28A /* AppDelegate.swift in Sources */,
 				1B0BFB562336303F0054E28A /* TabbarPresenter.swift in Sources */,
