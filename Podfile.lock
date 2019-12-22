@@ -37,7 +37,7 @@ DEPENDENCIES:
   - SwiftyBeaver
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  https://github.com/CocoaPods/Specs.git:
     - Alamofire
     - AlamofireObjectMapper
     - ObjectMapper
@@ -57,4 +57,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 94a69aef2fb7631d57c064a55f1ac9a53a14da94
 
-COCOAPODS: 1.7.5
+COCOAPODS: 1.8.4
