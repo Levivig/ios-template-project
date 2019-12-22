@@ -217,13 +217,13 @@
 		1B0BFB31233629E10054E28A /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				1B0BFB5D233632530054E28A /* Extensions */,
 				1B0BFB3F23362B020054E28A /* BaseClasses */,
-				1B0BFB64233633540054E28A /* Models */,
+				1BDD469E23AFFCAE0020AC54 /* Extensions */,
+				1BDD469F23AFFCB40020AC54 /* Models */,
 				1B0BFB4823362EBD0054E28A /* Protocols */,
 				1B0BFB5E233632830054E28A /* Services */,
+				1BDD46A023AFFCBA0020AC54 /* Views */,
 				1B0BFB32233629E70054E28A /* VIPER */,
-				1B0BFB5C2336322C0054E28A /* Views */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -281,20 +281,6 @@
 			path = Tabbar;
 			sourceTree = "<group>";
 		};
-		1B0BFB5C2336322C0054E28A /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		1B0BFB5D233632530054E28A /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
 		1B0BFB5E233632830054E28A /* Services */ = {
 			isa = PBXGroup;
 			children = (
@@ -312,11 +298,25 @@
 			path = RestClient;
 			sourceTree = "<group>";
 		};
-		1B0BFB64233633540054E28A /* Models */ = {
+		1BDD469E23AFFCAE0020AC54 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		1BDD469F23AFFCB40020AC54 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		1BDD46A023AFFCBA0020AC54 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		BA60848800195AD7C50DED11 /* Frameworks */ = {
