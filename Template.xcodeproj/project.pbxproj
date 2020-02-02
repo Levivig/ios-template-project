@@ -31,8 +31,8 @@
 		1B0BFB592336303F0054E28A /* TabbarWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0BFB532336303F0054E28A /* TabbarWireframe.swift */; };
 		1B0BFB5A2336303F0054E28A /* Tabbar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B0BFB542336303F0054E28A /* Tabbar.storyboard */; };
 		1B0BFB5B2336303F0054E28A /* TabbarInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0BFB552336303F0054E28A /* TabbarInteractor.swift */; };
-		1B0BFB61233632B10054E28A /* DataProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0BFB60233632B10054E28A /* DataProviderProtocol.swift */; };
 		1B0BFB63233632C60054E28A /* RestClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0BFB62233632C60054E28A /* RestClient.swift */; };
+		1BB2479223E6ED0500EBFD39 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB2479123E6ED0500EBFD39 /* APIError.swift */; };
 		1BDD46A223AFFEAE0020AC54 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDD46A123AFFEAE0020AC54 /* Constants.swift */; };
 		6524D19B1008FBBBC75E37A9 /* Pods_TemplateTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20BC19AFC57ED15C2391D931 /* Pods_TemplateTests.framework */; };
 		CAE9C10E91D46750C2067A3E /* Pods_Template.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DFFF0229F7F56A4EB810EAF /* Pods_Template.framework */; };
@@ -87,8 +87,8 @@
 		1B0BFB532336303F0054E28A /* TabbarWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabbarWireframe.swift; sourceTree = "<group>"; };
 		1B0BFB542336303F0054E28A /* Tabbar.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Tabbar.storyboard; sourceTree = "<group>"; };
 		1B0BFB552336303F0054E28A /* TabbarInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabbarInteractor.swift; sourceTree = "<group>"; };
-		1B0BFB60233632B10054E28A /* DataProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProviderProtocol.swift; sourceTree = "<group>"; };
 		1B0BFB62233632C60054E28A /* RestClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestClient.swift; sourceTree = "<group>"; };
+		1BB2479123E6ED0500EBFD39 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		1BDD46A123AFFEAE0020AC54 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		20BC19AFC57ED15C2391D931 /* Pods_TemplateTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TemplateTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		289B179FEFFC70B4A0A408EA /* Pods-TemplateUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TemplateUITests.release.xcconfig"; path = "Target Support Files/Pods-TemplateUITests/Pods-TemplateUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -295,7 +295,6 @@
 		1B0BFB5F2336328D0054E28A /* RestClient */ = {
 			isa = PBXGroup;
 			children = (
-				1B0BFB60233632B10054E28A /* DataProviderProtocol.swift */,
 				1B0BFB62233632C60054E28A /* RestClient.swift */,
 			);
 			path = RestClient;
@@ -311,6 +310,7 @@
 		1BDD469F23AFFCB40020AC54 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				1BB2479123E6ED0500EBFD39 /* APIError.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -593,7 +593,6 @@
 				1B0BFB30233629890054E28A /* Initializable.swift in Sources */,
 				1B0BFB4D23362F950054E28A /* LoggerInitializer.swift in Sources */,
 				1B0BFB582336303F0054E28A /* TabbarInterfaces.swift in Sources */,
-				1B0BFB61233632B10054E28A /* DataProviderProtocol.swift in Sources */,
 				1B0BFB3C23362A000054E28A /* InteractorInterface.swift in Sources */,
 				1B0BFB3A23362A000054E28A /* UIStoryboardExtension.swift in Sources */,
 				1B0BFB4723362B740054E28A /* BaseTabbarProtocolController.swift in Sources */,
@@ -606,6 +605,7 @@
 				1B0BFB3923362A000054E28A /* ViewInterface.swift in Sources */,
 				1B0BFB63233632C60054E28A /* RestClient.swift in Sources */,
 				1B0BFB3E23362A000054E28A /* PresenterInterface.swift in Sources */,
+				1BB2479223E6ED0500EBFD39 /* APIError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

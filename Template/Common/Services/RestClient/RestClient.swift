@@ -11,7 +11,7 @@ import AlamofireObjectMapper
 import Foundation
 import ObjectMapper
 
-class RestClient: DataProvider {
+class RestClient {
     
     // MARK: Singleton
     static let shared = RestClient()
@@ -28,30 +28,40 @@ class RestClient: DataProvider {
     internal func request<T: Mappable>(url: String,
                                        method: HTTPMethod = .get,
                                        data: [String: Any]? = nil,
-                                       completion: ((T?, Error?) -> Void)?) {
+                                       completion: ((Result<T, Error>) -> Void)?) {
+        
+        if let apiKey = UserDefaults.standard.string(forKey: Constants.UserDefaults.ApiKey) {
+            // TODO: Modify according to api spec
+            headers["x-api-key"] = apiKey
+            log.debug("x-api-key: \(apiKey)")
+        }
+        
         AF.request(url,
                    method: method,
                    parameters: data,
                    encoding: JSONEncoding.default,
                    headers: self.headers)
-            .validate(statusCode: 200..<300)
             .responseObject { (response: DataResponse<T>) in
                 
-                log.verbose("Request: \(String(describing: response.request))")   // original url request
-                log.verbose("Response: \(String(describing: response.response))") // http url response
-                log.verbose("Result: \(response.result)")                         // response serialization result
-                
-                if let data = response.data, let utf8Text = String(data: data, encoding: .utf8) {
-                    log.debug("Data: \(utf8Text)")
-                }
+                log.debug(response.debugDescription)
                 
                 switch response.result {
-                case .success(let data):
-                    log.debug("Data: \(data)")
-                    completion?(data, nil)
+                case .success(let object):
+                    if let data = response.data,let error = try? JSONDecoder().decode(APIError.self, from: data) {
+                        log.warning("\(error)")
+                        completion?(Result.failure(error))
+                    } else {
+                        log.debug("success: \(String(describing: response.request?.url))")
+                        completion?(Result.success(object))
+                    }
                 case .failure(let error):
-                    log.warning("\(error)")
-                    completion?(nil, error)
+                    if let data = response.data,let apiError = try? JSONDecoder().decode(APIError.self, from: data) {
+                        log.warning("\(apiError)")
+                        completion?(Result.failure(apiError))
+                    } else {
+                        log.warning("\(error)")
+                        completion?(Result.failure(error))
+                    }
                 }
         }
     }
@@ -59,26 +69,40 @@ class RestClient: DataProvider {
     internal func request<T: Mappable>(url: String,
                                        method: HTTPMethod = .get,
                                        data: [String: Any]? = nil,
-                                       completion: (([T]?, Error?) -> Void)?) {
+                                       completion: ((Result<[T], Error>) -> Void)?) {
+        
+        if let apiKey = UserDefaults.standard.string(forKey: Constants.UserDefaults.ApiKey) {
+            // TODO: Modify according to api spec
+            headers["x-api-key"] = apiKey
+            log.debug("x-api-key: \(apiKey)")
+        }
+        
         AF.request(url,
                    method: method,
                    parameters: data,
                    encoding: JSONEncoding.default,
                    headers: self.headers)
-            .validate(statusCode: 200..<300)
             .responseArray { (response: DataResponse<[T]>) in
                 
-                log.verbose("Request: \(String(describing: response.request))")   // original url request
-                log.verbose("Response: \(String(describing: response.response))") // http url response
-                log.verbose("Result: \(response.result)")                         // response serialization result
+                log.debug(response.debugDescription)
                 
                 switch response.result {
-                case .success(let data):
-                    log.debug("Data: \(data)")
-                    completion?(data, nil)
+                case .success(let object):
+                    if let data = response.data,let error = try? JSONDecoder().decode(APIError.self, from: data) {
+                        log.warning("\(error)")
+                        completion?(Result.failure(error))
+                    } else {
+                        log.debug("success: \(String(describing: response.request?.url))")
+                        completion?(Result.success(object))
+                    }
                 case .failure(let error):
-                    log.warning("\(error)")
-                    completion?(nil, error)
+                    if let data = response.data,let apiError = try? JSONDecoder().decode(APIError.self, from: data) {
+                        log.warning("\(apiError)")
+                        completion?(Result.failure(apiError))
+                    } else {
+                        log.warning("\(error)")
+                        completion?(Result.failure(error))
+                    }
                 }
         }
     }
