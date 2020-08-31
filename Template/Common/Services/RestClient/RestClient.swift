@@ -24,9 +24,9 @@ class RestClient {
     // MARK: - Requests -
     
     internal func request<T: Codable>(url: String,
-                                       method: HTTPMethod = .get,
-                                       data: [String: Any]? = nil,
-                                       completion: ((Result<T, Error>) -> Void)?) {
+                                      method: HTTPMethod = .get,
+                                      data: [String: Any]? = nil,
+                                      completion: ((Result<T, Error>) -> Void)?) {
         
         if let apiKey = UserDefaults.standard.string(forKey: Constants.UserDefaults.ApiKey) {
             // TODO: Modify according to api spec
