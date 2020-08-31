@@ -17,7 +17,6 @@ target 'Template' do
   pod 'SwifterSwift'
   pod 'SwiftLint'
   pod 'SwiftyBeaver'
-  # pod 'SwiftyJSON'
 
   target 'TemplateTests' do
     inherit! :search_paths
