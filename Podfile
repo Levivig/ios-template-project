@@ -8,7 +8,7 @@ target 'Template' do
   use_frameworks!
 
   # Pods for Template
-  pod 'Alamofire', '5.0.0-beta.6'
+  pod 'Alamofire'
   # pod 'Crashlytics'
   # pod 'Fabric'
   # pod 'Firebase/Analytics'
@@ -17,15 +17,5 @@ target 'Template' do
   pod 'SwifterSwift'
   pod 'SwiftLint'
   pod 'SwiftyBeaver'
-
-  target 'TemplateTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
-  target 'TemplateUITests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
 
 end

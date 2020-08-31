@@ -39,7 +39,7 @@ class RestClient {
                    parameters: data,
                    encoding: JSONEncoding.default,
                    headers: self.headers)
-            .responseData { (response: DataResponse<Data>) in
+            .responseData { (response: DataResponse<Data, AFError>) in
                 
                 log.debug(response.debugDescription)
                 
