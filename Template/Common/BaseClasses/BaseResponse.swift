@@ -7,21 +7,6 @@
 //
 
 import Foundation
-import ObjectMapper
 
-class BaseResponse: Mappable, Encodable {
-    
-    var isSuccess: Bool?
-    
-    required init?(map: Map) {
-        
-    }
-    
-    init?() {
-        
-    }
-    
-    func mapping(map: Map) {
-        fatalError("Implementation pending...")
-    }
+class BaseResponse: Codable {
 }

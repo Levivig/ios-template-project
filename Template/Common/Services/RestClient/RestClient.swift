@@ -7,9 +7,7 @@
 //
 
 import Alamofire
-import AlamofireObjectMapper
 import Foundation
-import ObjectMapper
 
 class RestClient {
     
@@ -25,7 +23,7 @@ class RestClient {
     
     // MARK: - Requests -
     
-    internal func request<T: Mappable>(url: String,
+    internal func request<T: Codable>(url: String,
                                        method: HTTPMethod = .get,
                                        data: [String: Any]? = nil,
                                        completion: ((Result<T, Error>) -> Void)?) {
@@ -41,59 +39,18 @@ class RestClient {
                    parameters: data,
                    encoding: JSONEncoding.default,
                    headers: self.headers)
-            .responseObject { (response: DataResponse<T>) in
+            .responseData { (response: DataResponse<Data>) in
                 
                 log.debug(response.debugDescription)
                 
                 switch response.result {
-                case .success(let object):
-                    if let data = response.data,let error = try? JSONDecoder().decode(APIError.self, from: data) {
-                        log.warning("\(error)")
-                        completion?(Result.failure(error))
-                    } else {
+                case .success(let data):
+                    if let object = try? JSONDecoder().decode(T.self, from: data) {
                         log.debug("success: \(String(describing: response.request?.url))")
                         completion?(Result.success(object))
-                    }
-                case .failure(let error):
-                    if let data = response.data,let apiError = try? JSONDecoder().decode(APIError.self, from: data) {
-                        log.warning("\(apiError)")
-                        completion?(Result.failure(apiError))
-                    } else {
+                    } else if let error = try? JSONDecoder().decode(APIError.self, from: data) {
                         log.warning("\(error)")
                         completion?(Result.failure(error))
-                    }
-                }
-        }
-    }
-    
-    internal func request<T: Mappable>(url: String,
-                                       method: HTTPMethod = .get,
-                                       data: [String: Any]? = nil,
-                                       completion: ((Result<[T], Error>) -> Void)?) {
-        
-        if let apiKey = UserDefaults.standard.string(forKey: Constants.UserDefaults.ApiKey) {
-            // TODO: Modify according to api spec
-            headers["x-api-key"] = apiKey
-            log.debug("x-api-key: \(apiKey)")
-        }
-        
-        AF.request(url,
-                   method: method,
-                   parameters: data,
-                   encoding: JSONEncoding.default,
-                   headers: self.headers)
-            .responseArray { (response: DataResponse<[T]>) in
-                
-                log.debug(response.debugDescription)
-                
-                switch response.result {
-                case .success(let object):
-                    if let data = response.data,let error = try? JSONDecoder().decode(APIError.self, from: data) {
-                        log.warning("\(error)")
-                        completion?(Result.failure(error))
-                    } else {
-                        log.debug("success: \(String(describing: response.request?.url))")
-                        completion?(Result.success(object))
                     }
                 case .failure(let error):
                     if let data = response.data,let apiError = try? JSONDecoder().decode(APIError.self, from: data) {

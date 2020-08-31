@@ -9,11 +9,9 @@ target 'Template' do
 
   # Pods for Template
   pod 'Alamofire', '5.0.0-beta.6'
-  pod 'AlamofireObjectMapper', '~> 6.1.0'
   # pod 'Crashlytics'
   # pod 'Fabric'
   # pod 'Firebase/Analytics'
-  pod 'ObjectMapper'
   # pod 'SDWebImage'
   pod 'SnapKit'
   pod 'SwifterSwift'
