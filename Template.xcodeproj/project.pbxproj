@@ -23,13 +23,12 @@
 		1B0BFB4723362B740054E28A /* BaseTabbarProtocolController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0BFB4423362B740054E28A /* BaseTabbarProtocolController.swift */; };
 		1B0BFB4A23362ECE0054E28A /* TabbarProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0BFB4923362ECE0054E28A /* TabbarProtocol.swift */; };
 		1B0BFB4D23362F950054E28A /* LoggerInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0BFB4C23362F950054E28A /* LoggerInitializer.swift */; };
-		1B0BFB562336303F0054E28A /* TabbarPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0BFB502336303F0054E28A /* TabbarPresenter.swift */; };
-		1B0BFB572336303F0054E28A /* TabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0BFB512336303F0054E28A /* TabbarViewController.swift */; };
-		1B0BFB582336303F0054E28A /* TabbarInterfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0BFB522336303F0054E28A /* TabbarInterfaces.swift */; };
-		1B0BFB592336303F0054E28A /* TabbarWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0BFB532336303F0054E28A /* TabbarWireframe.swift */; };
-		1B0BFB5A2336303F0054E28A /* Tabbar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B0BFB542336303F0054E28A /* Tabbar.storyboard */; };
-		1B0BFB5B2336303F0054E28A /* TabbarInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0BFB552336303F0054E28A /* TabbarInteractor.swift */; };
 		1B0BFB63233632C60054E28A /* RestClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0BFB62233632C60054E28A /* RestClient.swift */; };
+		1B1747322583EBDF00B1A873 /* TabbarInterfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B17472D2583EBDF00B1A873 /* TabbarInterfaces.swift */; };
+		1B1747332583EBDF00B1A873 /* TabbarPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B17472E2583EBDF00B1A873 /* TabbarPresenter.swift */; };
+		1B1747342583EBDF00B1A873 /* TabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B17472F2583EBDF00B1A873 /* TabbarViewController.swift */; };
+		1B1747352583EBDF00B1A873 /* TabbarInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1747302583EBDF00B1A873 /* TabbarInteractor.swift */; };
+		1B1747362583EBDF00B1A873 /* TabbarWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1747312583EBDF00B1A873 /* TabbarWireframe.swift */; };
 		1BB2479223E6ED0500EBFD39 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB2479123E6ED0500EBFD39 /* APIError.swift */; };
 		1BB2479523E6EE8000EBFD39 /* DataExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB2479423E6EE8000EBFD39 /* DataExtensions.swift */; };
 		1BDD46A223AFFEAE0020AC54 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDD46A123AFFEAE0020AC54 /* Constants.swift */; };
@@ -55,13 +54,12 @@
 		1B0BFB4423362B740054E28A /* BaseTabbarProtocolController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTabbarProtocolController.swift; sourceTree = "<group>"; };
 		1B0BFB4923362ECE0054E28A /* TabbarProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarProtocol.swift; sourceTree = "<group>"; };
 		1B0BFB4C23362F950054E28A /* LoggerInitializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggerInitializer.swift; sourceTree = "<group>"; };
-		1B0BFB502336303F0054E28A /* TabbarPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabbarPresenter.swift; sourceTree = "<group>"; };
-		1B0BFB512336303F0054E28A /* TabbarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabbarViewController.swift; sourceTree = "<group>"; };
-		1B0BFB522336303F0054E28A /* TabbarInterfaces.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabbarInterfaces.swift; sourceTree = "<group>"; };
-		1B0BFB532336303F0054E28A /* TabbarWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabbarWireframe.swift; sourceTree = "<group>"; };
-		1B0BFB542336303F0054E28A /* Tabbar.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Tabbar.storyboard; sourceTree = "<group>"; };
-		1B0BFB552336303F0054E28A /* TabbarInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabbarInteractor.swift; sourceTree = "<group>"; };
 		1B0BFB62233632C60054E28A /* RestClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestClient.swift; sourceTree = "<group>"; };
+		1B17472D2583EBDF00B1A873 /* TabbarInterfaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarInterfaces.swift; sourceTree = "<group>"; };
+		1B17472E2583EBDF00B1A873 /* TabbarPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarPresenter.swift; sourceTree = "<group>"; };
+		1B17472F2583EBDF00B1A873 /* TabbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarViewController.swift; sourceTree = "<group>"; };
+		1B1747302583EBDF00B1A873 /* TabbarInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarInteractor.swift; sourceTree = "<group>"; };
+		1B1747312583EBDF00B1A873 /* TabbarWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarWireframe.swift; sourceTree = "<group>"; };
 		1BB2479123E6ED0500EBFD39 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		1BB2479423E6EE8000EBFD39 /* DataExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataExtensions.swift; sourceTree = "<group>"; };
 		1BDD46A123AFFEAE0020AC54 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -203,22 +201,9 @@
 		1B0BFB4E23362FF90054E28A /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				1B0BFB4F233630190054E28A /* Tabbar */,
+				1B17472C2583EBD000B1A873 /* Tabbar */,
 			);
 			path = Modules;
-			sourceTree = "<group>";
-		};
-		1B0BFB4F233630190054E28A /* Tabbar */ = {
-			isa = PBXGroup;
-			children = (
-				1B0BFB542336303F0054E28A /* Tabbar.storyboard */,
-				1B0BFB552336303F0054E28A /* TabbarInteractor.swift */,
-				1B0BFB522336303F0054E28A /* TabbarInterfaces.swift */,
-				1B0BFB502336303F0054E28A /* TabbarPresenter.swift */,
-				1B0BFB512336303F0054E28A /* TabbarViewController.swift */,
-				1B0BFB532336303F0054E28A /* TabbarWireframe.swift */,
-			);
-			path = Tabbar;
 			sourceTree = "<group>";
 		};
 		1B0BFB5E233632830054E28A /* Services */ = {
@@ -235,6 +220,18 @@
 				1B0BFB62233632C60054E28A /* RestClient.swift */,
 			);
 			path = RestClient;
+			sourceTree = "<group>";
+		};
+		1B17472C2583EBD000B1A873 /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				1B17472D2583EBDF00B1A873 /* TabbarInterfaces.swift */,
+				1B17472E2583EBDF00B1A873 /* TabbarPresenter.swift */,
+				1B17472F2583EBDF00B1A873 /* TabbarViewController.swift */,
+				1B1747302583EBDF00B1A873 /* TabbarInteractor.swift */,
+				1B1747312583EBDF00B1A873 /* TabbarWireframe.swift */,
+			);
+			path = Tabbar;
 			sourceTree = "<group>";
 		};
 		1BB2479323E6EE6E00EBFD39 /* Foundation */ = {
@@ -352,7 +349,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1B0BFB5A2336303F0054E28A /* Tabbar.storyboard in Resources */,
 				1B0BFB08233628870054E28A /* LaunchScreen.storyboard in Resources */,
 				1B0BFB05233628870054E28A /* Assets.xcassets in Resources */,
 			);
@@ -424,27 +420,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1B0BFB572336303F0054E28A /* TabbarViewController.swift in Sources */,
 				1BDD46A223AFFEAE0020AC54 /* Constants.swift in Sources */,
 				1B0BFB3D23362A000054E28A /* FormatterInterface.swift in Sources */,
+				1B1747342583EBDF00B1A873 /* TabbarViewController.swift in Sources */,
 				1B0BFAFC233628850054E28A /* AppDelegate.swift in Sources */,
-				1B0BFB562336303F0054E28A /* TabbarPresenter.swift in Sources */,
 				1B0BFB4623362B740054E28A /* BaseViewController.swift in Sources */,
 				1BB2479523E6EE8000EBFD39 /* DataExtensions.swift in Sources */,
+				1B1747352583EBDF00B1A873 /* TabbarInteractor.swift in Sources */,
 				1B0BFB30233629890054E28A /* Initializable.swift in Sources */,
 				1B0BFB4D23362F950054E28A /* LoggerInitializer.swift in Sources */,
-				1B0BFB582336303F0054E28A /* TabbarInterfaces.swift in Sources */,
 				1B0BFB3C23362A000054E28A /* InteractorInterface.swift in Sources */,
 				1B0BFB3A23362A000054E28A /* UIStoryboardExtension.swift in Sources */,
 				1B0BFB4723362B740054E28A /* BaseTabbarProtocolController.swift in Sources */,
 				1B0BFB4A23362ECE0054E28A /* TabbarProtocol.swift in Sources */,
-				1B0BFB592336303F0054E28A /* TabbarWireframe.swift in Sources */,
 				1B0BFB4523362B740054E28A /* BaseResponse.swift in Sources */,
-				1B0BFB5B2336303F0054E28A /* TabbarInteractor.swift in Sources */,
+				1B1747332583EBDF00B1A873 /* TabbarPresenter.swift in Sources */,
 				1B0BFB4123362B240054E28A /* BaseNavigationController.swift in Sources */,
 				1B0BFB3B23362A000054E28A /* BaseWireframe.swift in Sources */,
 				1B0BFB3923362A000054E28A /* ViewInterface.swift in Sources */,
 				1B0BFB63233632C60054E28A /* RestClient.swift in Sources */,
+				1B1747322583EBDF00B1A873 /* TabbarInterfaces.swift in Sources */,
+				1B1747362583EBDF00B1A873 /* TabbarWireframe.swift in Sources */,
 				1B0BFB3E23362A000054E28A /* PresenterInterface.swift in Sources */,
 				1BB2479223E6ED0500EBFD39 /* APIError.swift in Sources */,
 			);
