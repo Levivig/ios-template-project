@@ -1,5 +1,13 @@
 PODS:
-  - Alamofire (5.2.2)
+  - PromiseKit (6.15.3):
+    - PromiseKit/CorePromise (= 6.15.3)
+    - PromiseKit/Foundation (= 6.15.3)
+    - PromiseKit/UIKit (= 6.15.3)
+  - PromiseKit/CorePromise (6.15.3)
+  - PromiseKit/Foundation (6.15.3):
+    - PromiseKit/CorePromise
+  - PromiseKit/UIKit (6.15.3):
+    - PromiseKit/CorePromise
   - SnapKit (5.0.1)
   - SwifterSwift (5.0.0):
     - SwifterSwift/AppKit (= 5.0.0)
@@ -24,7 +32,7 @@ PODS:
   - SwiftyBeaver (1.7.1)
 
 DEPENDENCIES:
-  - Alamofire
+  - PromiseKit
   - SnapKit
   - SwifterSwift
   - SwiftLint
@@ -37,15 +45,15 @@ SPEC REPOS:
     - SwiftLint
     - SwiftyBeaver
   trunk:
-    - Alamofire
+    - PromiseKit
 
 SPEC CHECKSUMS:
-  Alamofire: 814429acc853c6c54ff123fc3d2ef66803823ce0
+  PromiseKit: 3b2b6995e51a954c46dbc550ce3da44fbfb563c5
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   SwifterSwift: 96f90594b370802f01647c2b1229c74a84ffafee
   SwiftLint: 5553187048b900c91aa03552807681bb6b027846
   SwiftyBeaver: da5e573ad583586c18236324c36900990afe1733
 
-PODFILE CHECKSUM: 92cf2edcdef7f262f67c5f9c363abac4ff64085a
+PODFILE CHECKSUM: cdae935e8eab2cb258dd9ea18b60cc6a49096fdf
 
-COCOAPODS: 1.10.0
+COCOAPODS: 1.10.1

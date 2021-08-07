@@ -7,10 +7,10 @@ target 'Template' do
   use_frameworks!
 
   # Pods for Template
-  pod 'Alamofire'
   # pod 'Crashlytics'
   # pod 'Fabric'
   # pod 'Firebase/Analytics'
+  pod "PromiseKit"
   # pod 'SDWebImage'
   pod 'SnapKit'
   pod 'SwifterSwift'

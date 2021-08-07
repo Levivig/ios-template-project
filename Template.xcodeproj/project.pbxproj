@@ -32,6 +32,9 @@
 		1B0BFB63233632C60054E28A /* RestClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0BFB62233632C60054E28A /* RestClient.swift */; };
 		1BB2479223E6ED0500EBFD39 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB2479123E6ED0500EBFD39 /* APIError.swift */; };
 		1BB2479523E6EE8000EBFD39 /* DataExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB2479423E6EE8000EBFD39 /* DataExtensions.swift */; };
+		1BBEDAE426BEAE0300EEC70A /* RestClient+CatFact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BBEDAE326BEAE0300EEC70A /* RestClient+CatFact.swift */; };
+		1BBEDAE926BEB30D00EEC70A /* RestClient+DataExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BBEDAE826BEB30D00EEC70A /* RestClient+DataExtension.swift */; };
+		1BBEDAEB26BEB31D00EEC70A /* RestClient+EncodableExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BBEDAEA26BEB31D00EEC70A /* RestClient+EncodableExtension.swift */; };
 		1BDD46A223AFFEAE0020AC54 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDD46A123AFFEAE0020AC54 /* Constants.swift */; };
 		CAE9C10E91D46750C2067A3E /* Pods_Template.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DFFF0229F7F56A4EB810EAF /* Pods_Template.framework */; };
 /* End PBXBuildFile section */
@@ -64,6 +67,9 @@
 		1B0BFB62233632C60054E28A /* RestClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestClient.swift; sourceTree = "<group>"; };
 		1BB2479123E6ED0500EBFD39 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		1BB2479423E6EE8000EBFD39 /* DataExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataExtensions.swift; sourceTree = "<group>"; };
+		1BBEDAE326BEAE0300EEC70A /* RestClient+CatFact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RestClient+CatFact.swift"; sourceTree = "<group>"; };
+		1BBEDAE826BEB30D00EEC70A /* RestClient+DataExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RestClient+DataExtension.swift"; sourceTree = "<group>"; };
+		1BBEDAEA26BEB31D00EEC70A /* RestClient+EncodableExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RestClient+EncodableExtension.swift"; sourceTree = "<group>"; };
 		1BDD46A123AFFEAE0020AC54 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		20BC19AFC57ED15C2391D931 /* Pods_TemplateTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TemplateTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		289B179FEFFC70B4A0A408EA /* Pods-TemplateUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TemplateUITests.release.xcconfig"; path = "Target Support Files/Pods-TemplateUITests/Pods-TemplateUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -232,7 +238,9 @@
 		1B0BFB5F2336328D0054E28A /* RestClient */ = {
 			isa = PBXGroup;
 			children = (
+				1BBEDAE526BEB19100EEC70A /* Extensions */,
 				1B0BFB62233632C60054E28A /* RestClient.swift */,
+				1BBEDAE326BEAE0300EEC70A /* RestClient+CatFact.swift */,
 			);
 			path = RestClient;
 			sourceTree = "<group>";
@@ -243,6 +251,15 @@
 				1BB2479423E6EE8000EBFD39 /* DataExtensions.swift */,
 			);
 			path = Foundation;
+			sourceTree = "<group>";
+		};
+		1BBEDAE526BEB19100EEC70A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1BBEDAE826BEB30D00EEC70A /* RestClient+DataExtension.swift */,
+				1BBEDAEA26BEB31D00EEC70A /* RestClient+EncodableExtension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		1BDD469E23AFFCAE0020AC54 /* Extensions */ = {
@@ -425,15 +442,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B0BFB572336303F0054E28A /* TabbarViewController.swift in Sources */,
+				1BBEDAE426BEAE0300EEC70A /* RestClient+CatFact.swift in Sources */,
 				1BDD46A223AFFEAE0020AC54 /* Constants.swift in Sources */,
 				1B0BFB3D23362A000054E28A /* FormatterInterface.swift in Sources */,
 				1B0BFAFC233628850054E28A /* AppDelegate.swift in Sources */,
 				1B0BFB562336303F0054E28A /* TabbarPresenter.swift in Sources */,
 				1B0BFB4623362B740054E28A /* BaseViewController.swift in Sources */,
 				1BB2479523E6EE8000EBFD39 /* DataExtensions.swift in Sources */,
+				1BBEDAEB26BEB31D00EEC70A /* RestClient+EncodableExtension.swift in Sources */,
 				1B0BFB30233629890054E28A /* Initializable.swift in Sources */,
 				1B0BFB4D23362F950054E28A /* LoggerInitializer.swift in Sources */,
 				1B0BFB582336303F0054E28A /* TabbarInterfaces.swift in Sources */,
+				1BBEDAE926BEB30D00EEC70A /* RestClient+DataExtension.swift in Sources */,
 				1B0BFB3C23362A000054E28A /* InteractorInterface.swift in Sources */,
 				1B0BFB3A23362A000054E28A /* UIStoryboardExtension.swift in Sources */,
 				1B0BFB4723362B740054E28A /* BaseTabbarProtocolController.swift in Sources */,
