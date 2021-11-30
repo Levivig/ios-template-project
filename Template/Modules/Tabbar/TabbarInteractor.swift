@@ -1,6 +1,6 @@
 //
 //  TabbarInteractor.swift
-//  citychat
+//  Template
 //
 //  Created by Levente Vig on 2019. 07. 12..
 //  Copyright (c) 2019. CodeYard. All rights reserved.

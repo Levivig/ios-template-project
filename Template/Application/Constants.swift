@@ -8,7 +8,7 @@
 
 import UIKit
 
-//swiftlint:disable force_cast
+// swiftlint:disable:next force_cast
 let kAppDelegate = UIApplication.shared.delegate as! AppDelegate
 
 struct Constants {

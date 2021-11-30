@@ -108,7 +108,7 @@ playground.xcworkspace
 # https://guides.cocoapods.org/using/using-cocoapods.html#should-i-check-the-pods-directory-into-source-control
 # Pods/
 # Add this line if you want to avoid checking in source code from the Xcode workspace
-# *.xcworkspace
+*.xcworkspace
 
 # Carthage
 # Add this line if you want to avoid checking in source code from Carthage dependencies.
@@ -148,7 +148,7 @@ Icon.png
 ## compatibility with Xcode 3 and earlier (ignoring not required starting Xcode 4)
 
 ## Xcode Patch
-*.xcodeproj/*
+*.xcodeproj/
 !*.xcodeproj/project.pbxproj
 !*.xcodeproj/xcshareddata/
 !*.xcworkspace/contents.xcworkspacedata
@@ -156,5 +156,8 @@ Icon.png
 
 ### Xcode Patch ###
 **/xcshareddata/WorkspaceSettings.xcsettings
+
+# SwiftGen generated
+Template/Resources/Generated/*
 
 # End of https://www.gitignore.io/api/swift,xcode,macos,tower,fastlane,cocoapods
