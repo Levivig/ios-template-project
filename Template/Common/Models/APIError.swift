@@ -9,9 +9,6 @@
 import Foundation
 
 class APIError: Codable, LocalizedError {
-    
-    // TODO: Modify according to API
-    
     var name: String = ""
     var message: String = ""
     var code: Int = 0

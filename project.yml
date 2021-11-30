@@ -1,0 +1,41 @@
+name: Template
+options:
+  createIntermediateGroups: true # If the folders are nested, also nest the groups in Xcode
+  indentWidth: 4 # indent by 4 spaces
+  tabWidth: 4 # a tab is 4 spaces
+  bundleIdPrefix: com.levivig
+settings:
+  base:
+    VERSIONING_SYSTEM: Apple Generic
+    TARGETED_DEVICE_FAMILY: 1
+targets:
+  Template:
+    type: application
+    platform: iOS
+    deploymentTarget: 14.0
+    preBuildScripts:
+      - path: Scripts/run-swiftgen.sh
+        name: Swiftgen
+      - path: Scripts/run-swiftlint.sh
+        name: Swiftlint
+    sources:
+      - path: Template
+    info:
+      path: Template/SupportingFiles/Info.plist
+      properties:
+        UISupportedInterfaceOrientations: [UIInterfaceOrientationPortrait]
+        UILaunchStoryboardName: LaunchScreen
+    settings:
+      base:
+        TARGETED_DEVICE_FAMILY: 1
+        DEVELOPMENT_TEAM: "48KF4TL849"
+packages:
+  SnapKit:
+    url: https://github.com/SnapKit/SnapKit
+    from: 5.0.1
+  SwifterSwift:
+    url: https://github.com/SwifterSwift/SwifterSwift
+    from: 5.2.0
+  SwiftyBeaver:
+    url: https://github.com/SwiftyBeaver/SwiftyBeaver
+    from: 1.9.0

@@ -6,14 +6,17 @@
 ```sh
 git clone https://github.com/Levivig/ios-template-project
 cd ios-template-project
-bundle
-bundle exec pod install
-open Template.xcworkspace/
+brew bundle
+bundle install
+bundle exec fastlane generate_project
+open Template.xcodeproj/
 ```
 
 ## Configuration
 
-1. Rename whole project inside Xcode, which will rename most things
-2. Rename the Template folder inside Xcode
-3. Inside Xcode select your project file then your target and under Build settings update the Info.plist file location
-4. Build and run to see if everything works
+1. Rename Template in project.yml, including Info.plist path
+2. Rename the Template folder
+3. Update paths in swiftgen.yml
+4. Update paths in fastlane/Fastfile
+5. Run `bundle exec fastlane generate_project` again
+5. Open project, build and run to see if everything works

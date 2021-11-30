@@ -6,10 +6,7 @@
 //  Copyright © 2019. levivig. All rights reserved.
 //
 
-import SwiftyBeaver
 import UIKit
-
-let log = SwiftyBeaver.self
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -18,9 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     // MARK: - Init -
     
-    lazy var initializers: [Initializable] = [
-        LoggerInitializer()
-    ]
+    lazy var initializers: [Initializable] = []
     
     // MARK: - Lifecycle -
 
@@ -37,9 +32,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         if self.window == nil {
             self.window = UIWindow(frame: UIScreen.main.bounds)
-            if #available(iOS 13.0, *) {
-                self.window?.overrideUserInterfaceStyle = .light
-            }
         }
         
         self.window?.rootViewController = initialController

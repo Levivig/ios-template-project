@@ -1,6 +1,6 @@
 import UIKit
 
-protocol WireframeInterface: class {
+protocol WireframeInterface: AnyObject {
     func popFromNavigationController(animated: Bool)
     func dismiss(animated: Bool)
     
@@ -14,7 +14,7 @@ class BaseWireframe {
 
     fileprivate unowned var _viewController: UIViewController
     
-    //to retain view controller reference upon first access
+    // to retain view controller reference upon first access
     fileprivate var _temporaryStoredViewController: UIViewController?
     
     fileprivate var loadingScreen: UIView?

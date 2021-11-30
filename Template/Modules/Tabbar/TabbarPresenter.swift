@@ -1,6 +1,6 @@
 //
 //  TabbarPresenter.swift
-//  citychat
+//  Template
 //
 //  Created by Levente Vig on 2019. 07. 12..
 //  Copyright (c) 2019. CodeYard. All rights reserved.
@@ -10,9 +10,7 @@
 
 import UIKit
 
-final class TabbarPresenter: NSObject {
-    
-    // MARK: - Public properties -
+final class TabbarPresenter {
 
     // MARK: - Private properties -
 
@@ -23,7 +21,12 @@ final class TabbarPresenter: NSObject {
 
     // MARK: - Lifecycle -
 
-    init(view: TabbarViewInterface, interactor: TabbarInteractorInterface, wireframe: TabbarWireframeInterface, selectedTab: Int) {
+    init(
+        view: TabbarViewInterface,
+        interactor: TabbarInteractorInterface,
+        wireframe: TabbarWireframeInterface,
+        selectedTab: Int
+    ) {
         self.view = view
         self.interactor = interactor
         self.wireframe = wireframe

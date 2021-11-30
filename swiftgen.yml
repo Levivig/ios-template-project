@@ -1,0 +1,34 @@
+xcassets:
+  - inputs: Template/Resources/Assets/Assets.xcassets
+    outputs:
+      - templateName: swift5
+        output: Template/Resources/Generated/Assets.swift
+        params:
+          forceProvidesNamespaces: true
+          publicAccess: true
+  - inputs: Template/Resources/Assets/Colors.xcassets
+    outputs:
+      - templateName: swift5
+        output: Template/Resources/Generated/Colors.swift
+        params:
+          enumName: GenColors
+          allValues: true
+          forceProvidesNamespaces: true
+          publicAccess: true
+strings:
+  inputs: Template/Resources/Localization/en.lproj/Localizable.strings
+  outputs:
+    templateName: structured-swift5
+    output: Template/Resources/Generated/Strings.swift
+    params:
+      enumName: Text
+      forceProvidesNamespaces: true
+      publicAccess: true
+fonts:
+  inputs: Template/Resources/Fonts
+  outputs:
+    templateName: swift5
+    output: Template/Resources/Generated/Fonts.swift
+    params:
+      forceProvidesNamespaces: true
+      publicAccess: true

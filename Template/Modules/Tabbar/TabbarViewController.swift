@@ -1,6 +1,6 @@
 //
 //  TabbarViewController.swift
-//  citychat
+//  Template
 //
 //  Created by Levente Vig on 2019. 07. 12..
 //  Copyright (c) 2019. CodeYard. All rights reserved.
@@ -23,7 +23,6 @@ final class TabbarViewController: UITabBarController {
         delegate = self
         presenter.viewDidLoad()
     }
-	
 }
 
 // MARK: - Extensions -
@@ -32,7 +31,7 @@ extension TabbarViewController: TabbarViewInterface {
     func select(tab: Int) {
         selectedIndex = tab
     }
-    
+
     func set(controllers: [UIViewController]) {
         viewControllers = controllers
         viewControllers?.forEach({ controller in
